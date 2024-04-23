@@ -1,0 +1,49 @@
+= WhatWatch - 2024
+:title-page:
+:numbered:
+:source-highlighter: coderay
+:tabsize: 4
+
+== Introducción
+
+Desarrollo de una aplicación web con el fin de buscar información sobre películas, empleando React para la lógica y Tailwind CSS para los estilos, garantizando así un diseño responsive y atractivo para el usuario.
+
+== Descripción
+
+La aplicación integra una barra de búsqueda que permite a los usuarios consultar información detallada sobre películas a partir de su título, la cual es obtenida desde la API de The Movie Database (TMDb). Una vez seleccionada una película de la lista de resultados, se muestran todos sus detalles junto a una barra de rating, en donde el usuario puede calificar la película según su preferencia. Asimismo, se implementó una sección de "Favoritos" que permite a los usuarios guardar sus películas preferidas.
+
+Por último, la aplicación también cuenta con un sistema de paginación, permitiendo la exploración de diversas películas. 
+
+== Implementación - Componentes
+
+- context
+
+* `appContext.js:`
+
+- `API.js:` Contiene los datos necesarios para acceder a la API de The Movie Database (TMDb).
+
+- `Home.js:` Contiene la información de la sección principal.
+
+- `Favorites.js:` Sección de las películas favoritas del usuario.
+
+- `Movie.js:` Contiene la siguiente información de una película: Portada, título, descripción, puntos de rating y elenco. Además, cuenta con su respectiva clasificación y botón para agregar a favoritos.
+
+- `MovieList.js:` Lista de películas que se muestran como resultado de la búsqueda.
+
+- `NavBar.js:` Barra de navegación que contiene el logo de la aplicación, una barra de búsqueda y una sección de favoritos.
+
+- `SearchBar.js:` Barra de búsqueda que le permite al usuario buscar una película ingresando su título.
+
+- `Pagination.js:` Sistema de paginación.
+
+- `Rating.js:` Barra de rating para que le permite al usuario calificar la película entre una a cinco estrellas.
+
+== Decisiones de diseño
+
+- React Router: Decidimos utilizar React Router para la gestión de la navegación en la aplicación web, facilitando así la navegación para los usuarios.
+
+- Axios: Optamos por Axios para realizar solicitudes a la API de The Movie Database (TMDb) porque ofrece una sintaxis simple y concisa para realizar solicitudes y manejar respuestas.
+
+- AppContext: Implementamos un contexto de aplicación utilizando la API de contexto de React (AppContext) para gestionar el estado global de la aplicación y compartir datos entre componentes sin necesidad de pasar props manualmente. Esto nos permite mantener un flujo de datos más limpio y evitar la propagación excesiva de props a través de varios niveles de componentes.
+
+- Paginación con carga límite(10): Con el fin de mejorar la experiencia del usuario durante la demo, decidimos limitar la paginación a un máximo de 10 páginas. Esta limitación ayuda a evitar demoras en la carga de datos al reducir la cantidad de resultados mostrados simultáneamente. Sin embargo, este límite es ajustable y puede modificarse o eliminarse según sea necesario para adaptarse a futuros requisitos de la aplicación.
