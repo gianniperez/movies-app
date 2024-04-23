@@ -47,3 +47,35 @@ Por último, la aplicación también cuenta con un sistema de paginación, permi
 - AppContext: Implementamos un contexto de aplicación utilizando la API de contexto de React (AppContext) para gestionar el estado global de la aplicación y compartir datos entre componentes sin necesidad de pasar props manualmente. Esto nos permite mantener un flujo de datos más limpio y evitar la propagación excesiva de props a través de varios niveles de componentes.
 
 - Paginación con carga límite(10): Con el fin de mejorar la experiencia del usuario durante la demo, decidimos limitar la paginación a un máximo de 10 páginas. Esta limitación ayuda a evitar demoras en la carga de datos al reducir la cantidad de resultados mostrados simultáneamente. Sin embargo, este límite es ajustable y puede modificarse o eliminarse según sea necesario para adaptarse a futuros requisitos de la aplicación.
+
+== Instrucciones de ejecución
+
+Antes de comenzar, asegúrate de tener instalado Node.js y npm en tu sistema.
+
+1. Clona el repositorio:
+
+ [source, bash]
+ ----
+git clone https://github.com/gianniperez/movies-app.git
+ ----
+
+2. Verifica que el paquete "react-scripts" esté instalado correctamente:
+
+[source, bash]
+ ----
+npm list react-scripts
+ ----
+
+3. Si "react-scripts" no está instalado, instálalo ejecutando:
+
+[source, bash]
+ ----
+npm install react-scripts
+ ----
+
+4. Finalmente, para iniciar la aplicación, utiliza el comando:
+
+[source, bash]
+ ----
+npm start
+ ----
