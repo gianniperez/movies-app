@@ -18,7 +18,7 @@ Por último, la aplicación también cuenta con un sistema de paginación, permi
 
 - context
 
-* `appContext.js:`
+* `appContext.js:` Contiene datos compartidos entre uno o más componentes.
 
 - `API.js:` Contiene los datos necesarios para acceder a la API de The Movie Database (TMDb).
 
