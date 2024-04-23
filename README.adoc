@@ -50,32 +50,28 @@ Por último, la aplicación también cuenta con un sistema de paginación, permi
 
 == Instrucciones de ejecución
 
-Antes de comenzar, asegúrate de tener instalado Node.js y npm en tu sistema.
+Antes de comenzar, asegurate de tener instalado Node.js y npm en tu sistema.
 
-1. Clona el repositorio:
-
- [source, bash]
- ----
-git clone https://github.com/gianniperez/movies-app.git
- ----
-
-2. Verifica que el paquete "react-scripts" esté instalado correctamente:
-
+.1. Clona el repositorio:
 [source, bash]
- ----
-npm list react-scripts
- ----
+----
+ git clone https://github.com/gianniperez/movies-app.git
+----
 
-3. Si "react-scripts" no está instalado, instálalo ejecutando:
-
+.2. Verifica que el paquete "react-scripts" esté instalado correctamente:
 [source, bash]
- ----
+----
+ npm list react-scripts
+----
+
+.3. Si "react-scripts" no está instalado, instalalo ejecutando:
+[source, bash]
+----
 npm install react-scripts
- ----
+----
 
-4. Finalmente, para iniciar la aplicación, utiliza el comando:
-
+.4. Finalmente, para iniciar la aplicación, utiliza el comando:
 [source, bash]
- ----
+----
 npm start
- ----
+----
